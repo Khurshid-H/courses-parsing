@@ -209,28 +209,25 @@ func FSMustString(useLocal bool, name string) string {
 
 var _escData = map[string]*_escFile{
 
+	"/data/courses.tsv": {
+		name:    "courses.tsv",
+		local:   "data/courses.tsv",
+		size:    224,
+		modtime: 1623286940,
+		compressed: `
+H4sIAAAAAAAC/1TMwarCMBCF4X2eYl6gMOek96pLCYguXI3guliRQgjSqM8vSVHMbv6PmQkGIGeh4l92
+Q4wuWAegzlXdcXvaC+hL/Ynd5yndFrzkxoJ1JOslFatvU7F2wbz3Yk8qNi6Y1KJSS/R9L+cpPa6zEB9Y
+vlLJVqCq2tDvziG9hjiNMo5S+B0AAP//1cWW/OAAAAA=
+`,
+	},
+
 	"/data/tsvs.go": {
 		name:    "tsvs.go",
 		local:   "data/tsvs.go",
 		size:    0,
-		modtime: 1622589393,
+		modtime: 1623286961,
 		compressed: `
 H4sIAAAAAAAC/wEAAP//AAAAAAAAAAA=
-`,
-	},
-
-	"/data/variation_colors.tsv": {
-		name:    "variation_colors.tsv",
-		local:   "data/variation_colors.tsv",
-		size:    508,
-		modtime: 1618592445,
-		compressed: `
-H4sIAAAAAAAC/0yRwa7dIAwF9+cvHTglbozNM5Cr9Our3G66Q0gje8aHSbnwOXURLeXBYZsY6hdc7gct
-SceR8XE8NIsPSlI6khVj5zBiiaNEiiFSvBGLYujqCyWaS8FBbUTftrSEReLWMC60sPrfNyt8V6KckiXE
-cJ1yKTImEaY3YWpSsGQPwmXtd6j8bIHekQ+m2s1El30Tx862vT4YlHK+YvOEyU2vTKydPzt0ErnnQpEe
-mDLGqUkczHxQUvzfy7R/8wyiGCWhXrW9QCMOizmjw9Tp+Mhi/hIzHOF8y/kfYtjumOIVXVKd6DEniskD
-515fjSIK03YusORGivoRH9Q9L8ickYsVR8oLnt+1vuUwTRbRtfoXztcQUytXSrleZq/FnCVWOfGb71XG
-YOJvAAAA//+87mk8/AEAAA==
 `,
 	},
 
@@ -244,7 +241,7 @@ YOJvAAAA//+87mk8/AEAAA==
 var _escDirs = map[string][]os.FileInfo{
 
 	"data": {
+		_escData["/data/courses.tsv"],
 		_escData["/data/tsvs.go"],
-		_escData["/data/variation_colors.tsv"],
 	},
 }
